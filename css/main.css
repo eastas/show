@@ -1,0 +1,344 @@
+.header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  z-index: 9;
+  align-items: center;
+  background-color: #202020;
+}
+.header .logo {
+  height: 100%;
+  display: flex;
+  padding: 1.5625vw;
+}
+.header .logo img {
+  min-width: 20px;
+  max-width: 5vw;
+}
+.header .top-nav {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.header .top-nav li a:hover {
+  background-color: #e24646;
+}
+.header .top-nav li a {
+  padding: 1.0417vw;
+  color: aliceblue;
+  font-size: 0.7292vw;
+  text-align: center;
+}
+.header .search {
+  position: relative;
+  display: flex;
+  margin-left: 2.0833vw;
+  align-items: center;
+  width: 15vw;
+  max-width: 200px;
+  min-width: 100px;
+  overflow: hidden;
+  height: 2.5vw;
+}
+.header .search input {
+  width: 100%;
+  padding: 0.5208% 7%;
+  height: 10%;
+  border-radius: 500px;
+  border: none;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.863);
+}
+.header .search span {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  height: 2.5vw;
+  width: 2.5vw;
+  text-align: center;
+  line-height: 2.5vw;
+  border-radius: 600px;
+  font-size: 0.9375vw;
+}
+.header .search span:hover {
+  box-shadow: 0 0 0.4167vw #888;
+}
+.header .user-profile {
+  margin-left: 6vw;
+  display: flex;
+  width: 2.7604vw;
+  height: 2.7604vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header .user-profile img {
+  width: 100%;
+}
+.header .publish {
+  margin-left: 4vw;
+  color: orange;
+  font-size: 1.4vw;
+}
+.header .publish:hover {
+  color: #e24646;
+}
+.side-nav {
+  position: fixed;
+  display: flex;
+  top: 7vw;
+  width: 16vw;
+  box-shadow: 0 0 8px #ccc;
+  justify-content: center;
+  background-color: #efefef;
+}
+.side-nav ul {
+  width: 100%;
+}
+.side-nav ul .cur {
+  background-color: #fff;
+}
+.side-nav ul li {
+  width: 100%;
+}
+.side-nav ul li a {
+  width: 100%;
+  padding: 1.0417vw;
+  font-size: 0.9375vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-nav ul li a img {
+  margin-right: 0.625vw;
+  width: 1.5em;
+}
+.main {
+  position: relative;
+  top: 7vw;
+  left: 16.9792vw;
+  width: 81vw;
+  box-shadow: 0 0 8px #ccc;
+}
+.main h1 {
+  font-size: 2vw;
+  padding: 0.5208vw;
+}
+.main .list {
+  justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+}
+.main .item:hover {
+  transform: translateY(-0.4167vw);
+  transition: all 0.5s ease-in-out;
+}
+.main .item {
+  width: 30%;
+  border-radius: 0.4167vw;
+  box-shadow: 0 0 8px #ccc;
+  margin: 0.2604vw 0;
+}
+.main .item .top {
+  position: relative;
+}
+.main .item .top .tag {
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+}
+.main .item .top .tag span {
+  background-color: #fff;
+  font-size: 0.7292vw;
+  padding: 0.1042vw;
+  border-radius: 0.3042vw;
+}
+.main .item .top a {
+  display: block;
+}
+.main .item .top a img {
+  border-radius: 1.1042vw;
+  width: 100%;
+}
+.main .item h3 {
+  font-size: 1vw;
+  padding: 0 0.4167vw;
+}
+.main .item .read {
+  padding: 0 0.4167vw;
+}
+.main .item .read span {
+  font-size: 0.625vw;
+}
+.main .item .update {
+  padding: 0 0.4167vw;
+  padding-bottom: 0.4167vw;
+}
+.main .item .update span {
+  font-size: 0.625vw;
+}
+#mylike.main .headertop {
+  position: relative;
+  width: 100%;
+  background: url(../images/self_top_bg.jpg);
+  padding: 1.6vw;
+}
+#mylike.main .headertop .box {
+  overflow: hidden;
+}
+#mylike.main .headertop .box .avatar {
+  width: 8.9063vw;
+  height: 8.6979vw;
+  margin-left: -0.4167vw;
+  margin-bottom: 1.25vw;
+  cursor: pointer;
+}
+#mylike.main .headertop .box .user {
+  margin-bottom: 1vw;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+}
+#mylike.main .headertop .box .user .nickName {
+  font-size: 12px;
+  color: #fff;
+}
+#mylike.main .headertop .box .user span {
+  margin-right: 1.0417vw;
+  display: inline-block;
+  align-self: center;
+  margin-right: 12px;
+}
+#mylike.main .headertop .box .user .a,
+#mylike.main .headertop .box .user .b {
+  position: relative;
+  padding: 0.2604vw;
+}
+#mylike.main .headertop .box .user .a1,
+#mylike.main .headertop .box .user .b1 {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+#mylike.main .headertop .box .user .a1 {
+  width: 12px;
+}
+#mylike.main .headertop .box .user .b1 {
+  width: 24px;
+}
+#mylike.main .headertop .box .styleTag {
+  margin-bottom: 1vw;
+  display: inline-block;
+  padding: 0.2vw 1.192vw;
+  cursor: pointer;
+  background-color: rgba(194, 194, 194, 0.479);
+  border-radius: 200px;
+}
+#mylike.main .headertop .box .styleTag span {
+  color: #fff;
+  font-size: 12px;
+}
+#mylike.main .headertop .box .info {
+  margin-bottom: 1vw;
+  font-size: 12px;
+  color: #fff;
+}
+#mylike.main .headertop .box .datial {
+  font-size: 16px;
+  color: #fff;
+}
+#mylike.main .headertop .box .datial span {
+  padding: 0.625vw;
+}
+#mylike.main .itemBox {
+  display: flex;
+  padding: 0 8px;
+}
+#mylike.main .itemBox li {
+  position: relative;
+}
+#mylike.main .itemBox li.cur::after {
+  background-color: #ffd000;
+}
+#mylike.main .itemBox li::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0.7292vw;
+  width: 3.4375vw;
+  border-radius: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+#mylike.main .itemBox a {
+  padding: 8px;
+}
+#mylike.main .small-nav {
+  display: flex;
+  padding: 1vw 1.4vw;
+}
+#mylike.main .small-nav a.cur {
+  background-color: rgba(212, 212, 212, 0.5);
+}
+#mylike.main .small-nav a {
+  border-radius: 100px;
+  padding: 0.2083vw 1vw;
+  margin-right: 0.825vw;
+}
+#mylike.main .tip {
+  background-color: #faf4e8;
+  color: #b39468;
+  padding: 1vw 2.6042vw;
+  font-size: 14px;
+  cursor: pointer;
+}
+#mylike.main .list {
+  justify-content: flex-start;
+  padding: 2vw;
+}
+#mylike.main .list .item {
+  margin-right: 1vw;
+}
+#mylike.main .contextbox {
+  padding: 0 8px;
+}
+#mylike.main .contextbox .top img {
+  height: 42.1875vw;
+}
+#mylike.main .contextbox .tag2 span {
+  font-size: 12px;
+  color: #555;
+}
+#mylike.main .contextbox .tag2 span:nth-child(1) {
+  color: orangered;
+}
+#mylike.main .contextbox p {
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+#mylike.main .contextbox .bottom {
+  padding: 10px 0;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+#mylike.main .contextbox .bottom a {
+  display: flex;
+  align-items: center;
+}
+#mylike.main .contextbox .bottom a img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+#mylike.main .contextbox .bottom a span {
+  margin-left: 10px;
+  color: #555;
+  font-size: 12px;
+}
+#mylike.main .contextbox .bottom span.cur {
+  color: orangered;
+}
